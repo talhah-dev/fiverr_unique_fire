@@ -1,7 +1,7 @@
 const dynamic_navbar = document.getElementById("navbar");
 
 dynamic_navbar.innerHTML = `
-        <nav id="navbar" class="absolute transition-all duration-500  top-0 left-0 w-full z-40">
+        <nav id="navbar" class="absolute bg-white transition-all duration-500  top-0 left-0 w-full z-40">
             <div class="md:max-w-[85%] mx-auto flex justify-between items-center w-full xl:p-5 p-3 xl:h-[116px] h-24">
                 <div class="flex w-full items-center justify-between xl:gap-32 md:gap-20">
                     <a data-aos="fade-right" href="/index.html"
@@ -10,7 +10,7 @@ dynamic_navbar.innerHTML = `
                     </a>
                     <div class="flex items-center gap-3">
                         <div data-aos="fade-left" class="xl:flex items-center gap-10 hidden">
-                            <ul id="navbarLinks" class="xl:flex hidden items-center text-zinc-100 gap-10">
+                            <ul id="navbarLinks" class="xl:flex hidden items-center text-zinc-800 gap-10">
                                 <li><a href="/index.html"
                                         class="hover:opacity-60 tracking-wide text-nowrap  transition-all duration-500">Home</a>
                                 </li>

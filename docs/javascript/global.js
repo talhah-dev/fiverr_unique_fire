@@ -59,21 +59,6 @@ setTimeout(() => {
     hideLoader();
 }, 200); // even if task is fast, loader will stay at least 0.5s
 
-// faqs
-
-function toggleAccordion(index) {
-    const content = document.getElementById(`content-${index}`);
-    const icon = document.getElementById(`icon-${index}`);
-
-    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
-        content.style.maxHeight = '0';
-        icon.classList.remove('rotate-180')
-    } else {
-        content.style.maxHeight = content.scrollHeight + 'px';
-        icon.classList.add('rotate-180')
-    }
-}
-
 //   contact
 
 const form = document.getElementById('contact-form');
