@@ -14,6 +14,8 @@ footer.innerHTML = `
                         </a>
             </div>
         </div>
+        
+        <div class="md:block hidden"></div>
         <div data-aos="fade-up" data-aos-delay="100" class="second">
             <h2 class="text-2xl text-zinc-800 font-semibold">Quick Link</h2>
             <ul class="mt-5 space-y-3 text-zinc-600 font-medium">
@@ -29,13 +31,7 @@ footer.innerHTML = `
                 <li><a href="/privacy.html">Privacy Policy</a></li>
             </ul>
         </div>
-        <div data-aos="fade-up" data-aos-delay="300" class="second">
-            <h2 class="text-2xl text-zinc-800 font-semibold">Social Media</h2>
-            <ul class="mt-5 space-y-3 text-zinc-600 font-medium">
-                <li class="flex items-center gap-3"><i class="fa-brands fa-instagram text-xl"></i><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                <li class="flex items-center gap-3"><i class="fa-brands fa-facebook text-xl"></i><a href="https://www.tiktok.com">Facebook</a></li>
-            </ul>
-        </div>
+
     </footer>
 
     <p class="text-center p-4 text-zinc-600 mt-5">
