@@ -45,7 +45,6 @@
 </head>
 
 <body class="overflow-x-hidden">
-
     <div id="global-loader"
         class="hi dden transition-opacity duration-300 opacity-0 fixed inset-0 bg-zinc-100 flex justify-center items-center z-50">
         <div class="text-center">
@@ -106,14 +105,23 @@
                                         <h5 class="text-black text-base font-normal leading-6 ml-5">073 293 0405</h5>
                                     </a>
 
-                                    <a href="mailto:nico@uniquefire.co.za" class="flex items-center mb-6">
+                                    <div class="flex items-center mb-6">
                                         <i class="fa-solid fa-envelope text-zinc-600 text-lg"></i>
-                                        <h5 class="text-black text-base font-normal leading-6 ml-5">
-                                            nico@uniquefire.co.za</h5>
-                                    </a>
+                                        <div class="">
+
+                                            <a href="mailto:nico@uniquefire.co.za"
+                                                class="text-black block text-base font-normal leading-6 ml-5">
+                                                nico@uniquefire.co.za</a>
+                                            <a href="mailto:info@uniquefire.co.za"
+                                                class="text-black block text-base font-normal leading-6 ml-5">
+                                                info@uniquefire.co.za</a>
+                                        </div>
+                                    </div>
                                     <a href="#" class="flex items-center">
                                         <i class="fa-solid fa-location-dot text-zinc-600 text-lg"></i>
-                                        <h5 class="text-black text-base font-normal leading-6 ml-5">Plot 35 Myngenoegen, 0699</h5>
+                                        <h5 class="text-black text-base font-normal leading-6 ml-5">5b 22nd Street
+                                            Industria, Polokwane,
+                                            Limpopo, South Africa</h5>
                                     </a>
                                 </div>
                             </div>
@@ -122,25 +130,48 @@
                 </div>
 
                 <form id="contact-form" class="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
-                    <h2 class="text-zinc-800 text-4xl font-semibold leading-10 mb-11">Send Us A Message
-                    </h2>
+                    <h2 class="text-zinc-800 text-4xl font-semibold leading-10 mb-11">Send Us A Message</h2>
+
                     <input type="hidden" name="access_key" value="keyyyyyyyyyyyyyyyyyy">
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    <input required type="text"
-                        class="w-full text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-6"
-                        placeholder="Name" name="Name">
-                    <input required type="text"
-                        class="w-full text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-6"
-                        placeholder="Email" name="Email">
-                    <input required type="text"
-                        class="w-full text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-6"
-                        placeholder="Phone" name="Phone">
-                    <textarea type="text"
-                        class="w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-10"
-                        placeholder="Message" required name="Message" id="" rows="8"></textarea>
+
+                    <input required type="text" name="Name" placeholder="Full Name"
+                        class="w-full text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-6">
+
+                    <input required type="text" name="company Name" placeholder="Company Name"
+                        class="w-full text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-6">
+
+                    <input required type="text" name="Email" placeholder="Email Address"
+                        class="w-full text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-6">
+
+                    <input required type="text" name="Phone" placeholder="Phone Number"
+                        class="w-full text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-6">
+
+                    <!-- ✅ Dropdown for selecting a service -->
+                    <select name="Service" required
+                        class="w-full text-gray-600 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-6">
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="Fire Extinguishers">Fire Extinguishers</option>
+                        <option value="Fire Hose Reels & Hydrants">Fire Hose Reels & Hydrants</option>
+                        <option value="Fire & Evacuation Signage">Fire & Evacuation Signage</option>
+                        <option value="Fire Detection Systems">Fire Detection Systems</option>
+                        <option value="Evacuation Systems">Evacuation Systems</option>
+                        <option value="Sprinkler Systems">Sprinkler Systems</option>
+                        <option value="Water Reticulation Projects">Water Reticulation Projects</option>
+                        <option value="Evacuation Plans">Evacuation Plans</option>
+                        <option value="Fire Sealing">Fire Sealing</option>
+                        <option value="Fire Pumps & Tanks">Fire Pumps & Tanks</option>
+                        <option value="Gas Suppression Systems">Gas Suppression Systems</option>
+                        <option value="Kitchen Canopy Suppression">Kitchen Canopy Suppression</option>
+                    </select>
+
+                    <textarea required name="Message" rows="8" placeholder="Message"
+                        class="w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none p-3 mb-10"></textarea>
+
                     <button
                         class="w-full p-3 text-white text-base font-semibold leading-6 rounded-lg transition-all duration-700 bg-[#d1322c] shadow-sm cursor-pointer">Send</button>
                 </form>
+
                 <div id="success-popup"
                     class="hidden fixed fadeIn bottom-10 right-10 z-50 bg-opacity-50 flex items-center justify-center">
                     <div class="bg-white p-4 rounded-lg shadow-lg">
